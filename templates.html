@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Templates - Twin-Clouds</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="templates.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Petit+Formal+Script&family=Satisfy&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar container">
+            <a href="index.html" class="logo-container">
+                <img src="images/twin-clouds-logo.svg" class="logo">
+                <span class="site-name">Twin-Clouds</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="features.html">Features</a></li>
+                <li><a href="pricing.html">Pricing</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="templates.html" class="active">Templates</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="ai_studio.html">AI Studio</a></li>
+                <li><a href="inbox.html">Inbox</a></li>
+            </ul>
+            <div class="auth-buttons">
+                <a href="login.html" class="btn btn-outline">Login</a>
+                <a href="signup.html" class="btn btn-primary">Sign Up</a>
+            </div>
+            <button class="hamburger">&#9776;</button>
+        </nav>
+    </header>
+
+
+    <main class="site-main">
+
+
+        <section class="templates-hero">
+            <div class="container text-center">
+                <h1 class="fade-in">Find the Perfect Template, Instantly.</h1>
+                <p class="fade-in">Choose from our curated collection or connect your favorite design tool.</p>
+                <div class="templates-hero-cta fade-in">
+                </div>
+            </div>
+        </section>
+
+
+        <section id="exclusive-templates" class="templates-section">
+            <div class="container">
+                <h2 class="section-title">Exclusive, Ready-to-Post Templates</h2>
+                <p class="section-subtitle">Quickly create professional, on-brand content designed specifically for our platform.</p>
+
+
+                <div class="templates-grid">
+                    <article class="template-card fade-in">
+                        <img src="assets/templates/instagram_carousel.jpg" alt="Instagram Carousel Template">
+                        <div class="card-content">
+                            <h3>Instagram Carousel</h3>
+                            <p>Engage your audience with this multi-image product highlight.</p>
+                            <a class="btn btn-accent" href="#">Use This Template</a>
+                        </div>
+                    </article>
+                   
+                  <article class="template-card fade-in" data-template="assets/templates/quick_video_ad.json">
+  <img src="assets/templates/video_ad_bg.jpg" alt="video_ad_bg">
+  <div class="card-content">
+      <h3>Quick Video Ad</h3>
+      <p>A dynamic, editable video ad layout for social media.</p>
+      <a class="btn btn-accent quick-video-btn" href="#">Use This Template</a>
+  </div>
+</article>
+
+
+
+                    <article class="template-card fade-in">
+                        <img src="assets/templates/quote_graphic.jpg" alt="Quote Graphic Template">
+                        <div class="card-content">
+                            <h3>Motivational Quote</h3>
+                            <p>Share inspiring thoughts with a clean, branded quote graphic.</p>
+                            <a class="btn btn-accent" href="#">Use This Template</a>
+                        </div>
+                    </article>
+
+
+                    <article class="template-card fade-in">
+                        <img src="assets/templates/event_promo.jpg" alt="Event Promotion Template">
+                        <div class="card-content">
+                            <h3>Event Promotion</h3>
+                            <p>Announce your next event with a stylish, eye-catching design.</p>
+                            <a class="btn btn-accent" href="#">Use This Template</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="external-templates" class="templates-section external-bg">
+            <div class="container">
+                <h2 class="section-title">Design with Your Favorite Tools</h2>
+                <p class="section-subtitle">Connect and import designs directly from the world's most popular creative platforms.</p>
+                <div class="templates-grid">
+                    <article class="template-card fade-in">
+                        <img src="assets/templates/canva_integration.png" alt="Canva Integration">
+                        <div class="card-content">
+                            <h3>Connect to Canva</h3>
+                            <p>Access millions of templates and powerful design tools.</p>
+                            <a class="btn btn-primary" target="_blank" href="https://www.canva.com/templates/">Open Canva</a>
+                        </div>
+                    </article>
+
+
+                    <article class="template-card fade-in">
+                        <img src="assets/templates/adobe_express.jpg" alt="Adobe Express Integration">
+                        <div class="card-content">
+                            <h3>Connect to Adobe Express</h3>
+                            <p>Create stunning graphics with professional-grade assets.</p>
+                            <a class="btn btn-primary" target="_blank" href="https://www.adobe.com/express/templates/">Open Adobe Express</a>
+                        </div>
+                    </article>
+
+
+                    <article class="template-card fade-in">
+                        <img src="assets/templates/figma_integration.jpg" alt="Figma Integration">
+                        <div class="card-content">
+                            <h3>Import from Figma</h3>
+                            <p>Seamlessly bring over designs from your team’s Figma files.</p>
+                            <a class="btn btn-primary" target="_blank" href="https://www.figma.com/community/">Open Figma Community</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <footer class="site-footer">
+        &copy; <span id="year"></span> Twin-Clouds
+    </footer>
+
+
+   
+    <script>
+        // Hamburger Menu (if you have it)
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+        if(hamburger) {
+            hamburger.addEventListener('click', () => {
+                navLinks.classList.toggle('show');
+            });
+        }
+       
+        // Dynamic year for footer
+        document.getElementById("year").textContent = new Date().getFullYear();
+
+
+        // Fade-in animation for sections
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('show');
+                }
+            });
+        });
+
+
+        document.querySelectorAll('.fade-in').forEach((el) => observer.observe(el));
+    </script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fabric.js/5.2.4/fabric.min.js"></script>
+<script type="module" src="js/main.js"></script>
+</body>
+</html>
